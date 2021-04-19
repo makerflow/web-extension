@@ -1,0 +1,50 @@
+<html>
+   <head>
+      <title>Makerflow</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+      <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/toastr.min.css">
+      <link href="assets/css/overlay.css" rel="stylesheet" />
+   </head>
+    <body>
+	<div class="container">
+	    <div class="row">
+		    <div class="col-12">
+			    <img class="logo-image" src="assets/images/logo.png" class="mb-4 mt-3" />
+
+			</div>
+		</div>
+
+
+		<div tabindex="-1" role="dialog" id="flow-modal" data-backdrop="static" class="modal fade show" aria-modal="true" style="padding-right: 17px; display: block;">
+		   <div role="document" class="modal-dialog modal-lg">
+		      <div class="modal-content">
+		         <div class="modal-header">
+		            <h5 class="modal-title">
+		               Flow mode started <span class="relative-time"></span>
+		            </h5>
+		         </div>
+		         <div class="modal-body justify-content-center">
+		            <div class="container-fluid">
+		               <div class="row"><button type="button" data-dismiss="modal" class="btn btn-secondary btn-lg btn-block stop-maker-flow">
+		                  Stop Flow Mode
+		                  </button>
+		               </div>
+		               <div class="row justify-content-center"><small class="text-muted">Flow mode is currently running on Makerflow and preventing you from seeing this website so you can focus on the task at hand.</small></div>
+		            </div>
+		         </div>
+		      </div>
+		   </div>
+		</div>
+
+	</div>
+	  <script src="assets/js/jquery-3.6.0.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/js/env.js"></script>
+      <script src="assets/js/iframe-popup.js"></script>
+    </body>
+</html>

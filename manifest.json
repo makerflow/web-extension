@@ -1,0 +1,37 @@
+{
+    "manifest_version": 2,
+    "name": "Makerflow",
+    "short_name": "Makerflow",
+    "version": "1.0.5",
+    "description": "Makerflow",
+    "icons": {
+      "48": "conimages/icon.png",
+      "96": "conimages/icon@2.png"
+    },
+    "background": {
+        "scripts": ["/assets/js/jquery-3.6.0.min.js","/assets/js/moment.min.js","/assets/js/env.js","/assets/js/background.js"]
+    },
+    "browser_action": {
+        "browser_style": false,
+        "default_title": "Makerflow",
+        "default_popup": "/index.html"
+    },
+     "content_scripts": [ {
+          "all_frames": true,
+           "match_about_blank": true,
+          "js": [ "/assets/js/jquery-3.6.0.min.js", "/assets/js/cn.js" ],
+          "css":["/assets/css/content.css"],
+          "matches": [ "<all_urls>" ]
+        }
+    ],
+    "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com 'unsafe-eval'; object-src 'self'",
+    "permissions": [
+        "tabs",
+        "storage",
+        "<all_urls>"
+    ],
+     "web_accessible_resources": [
+            "/conimages/*",
+             "overlay.html"
+     ]
+}

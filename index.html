@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Makerflow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/toastr.min.css">
+    <link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 justify-content-center"><img src="assets/images/logo.png" class="mb-4 mt-3"/></div>
+    </div>
+    <!--    <div class="row">-->
+    <!--        <div class="col-md-12">-->
+    <!--            <button class="btn btn-primary btn-block btn-lg begin-flow">-->
+    <!--                <span class="loading-flow-mode spinner-border spinner-border-sm" style="display:none;" role="status" aria-hidden="true"></span>-->
+    <!--                Begin Flow Mode <i class="fa fa-laptop fa-lg"></i>-->
+    <!--            </button>-->
+    <!--            <button type="button" data-dismiss="modal" class="btn btn-secondary btn-lg btn-block stop-maker-flow">-->
+    <!--                Stop Flow Mode-->
+    <!--            </button>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--    <div class="row mt-4">-->
+    <!--        <div class="col-md-2">-->
+    <!--            <a href="#settings" class="text-dark" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="settings">-->
+    <!--                <span id="settings-arrow"><i class='fa fa-arrow-right'></i></span> Settings-->
+    <!--            </a>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <form id="set_token">
+                <div class="input-group set_btn">
+                    <label for="token" class="token sr-only">Enter API Token</label>
+                    <input name="token" type="password" class="form-control" id="token" placeholder="Enter API Token">
+                    <button type="submit" class="input-group-append btn btn-primary set set-api-token">
+                        <i class="fa fa-save text-light"></i>
+                    </button>
+                </div>
+                <small class="form-text text-muted">
+                    <a target="_blank" href="https://app.makerflow.co/settings#/api">Click here</a>
+                    to get your API token
+                </small>
+            </form>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header setup">Distracting websites</div>
+                <div class="card-body card_section">
+                    <form id="add_domain">
+                        <div class="input-group">
+                            <label for="domain" class="sr-only">Enter domain To block</label>
+                            <input type="text" name="domain" class="form-control" id="domain" placeholder="Enter domain to block">
+                            <button type="submit" class="btn btn-primary add input-group-append">
+                                <i class="fa fa-plus text-light"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <ul class="list-group list-group-flushed domain_list"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.validate.js"></script>
+<script src="assets/js/toastr.min.js"></script>
+<script src="assets/js/env.js"></script>
+<script src="assets/js/popup.js"></script>
+</body>
+</html>
