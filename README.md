@@ -4,7 +4,7 @@ Saves you from yourself by blocking distracting websites when you need to focus 
 
 ## Installation
 
-Install the extension from the [Chrome store[(https://chrome.google.com/webstore/detail/makerflow/codmnedpgifnlanopnolihpobepaafic)
+Install the extension from the [Chrome store](https://chrome.google.com/webstore/detail/makerflow/codmnedpgifnlanopnolihpobepaafic)
 
 
 
